@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+* {
+  transition: .4s;
+}
+
+.hide-scrollbar {
+  overflow: auto;
+
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
