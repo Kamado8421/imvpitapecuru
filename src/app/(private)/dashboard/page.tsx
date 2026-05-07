@@ -15,7 +15,7 @@ export default function DashboardPage() {
             <GeneralReport />
             <br />
             <span className="text-gray-500 font-semibold">AÇÕES RÁPIDAS</span>
-            <ActionsButton admin={user.isAdmin}/>
+            <ActionsButton isAdmin={user.isAdmin}/>
         </div>
     )
 }
