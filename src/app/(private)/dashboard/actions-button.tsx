@@ -1,6 +1,6 @@
 import { ArrowLeftIcon, ChevronRight, ListIcon, MinusCircleIcon, PlusCircleIcon } from "lucide-react";
 
-export default function ActionsButton() {
+export default function ActionsButton({isAdmin}:{isAdmin: boolean}) {
     return (
         <div>
             <a href="/dashboard/entries" className="bg-white border border-gray-400 rounded-2xl p-5 mt-3 flex items-center justify-between hover:bg-gray-100">
@@ -15,7 +15,7 @@ export default function ActionsButton() {
                 </div>
                 <ChevronRight color="gray" />
             </a>
-
+            { isAdmin &&
             <a href="/dashboard/outflows" className="bg-white border border-gray-400 rounded-2xl p-5 mt-3 flex items-center justify-between hover:bg-gray-100">
                 <div className="flex items-center gap-4">
                     <div className="h-10 w-10 bg-red-500 flex items-center justify-center rounded-md">
@@ -28,6 +28,7 @@ export default function ActionsButton() {
                 </div>
                 <ChevronRight color="gray" />
             </a>
+            }
 
             <a href="/dashboard/registrations" className="bg-white border border-gray-400 rounded-2xl p-5 mt-3 flex items-center justify-between hover:bg-gray-100">
                 <div className="flex items-center gap-4">
